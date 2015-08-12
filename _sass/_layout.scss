@@ -120,11 +120,19 @@
     margin-left: 0;
     list-style: none;
 
-    -webkit-box-align: stretch;
     -webkit-font-smoothing: antialiased;
-    align-items: stretch;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    align-items: stretch;
 
     > li {
         margin-bottom: $spacing-unit;
