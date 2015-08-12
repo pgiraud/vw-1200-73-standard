@@ -3,8 +3,7 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    height: 10rem;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -15,7 +14,6 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {
@@ -162,8 +160,8 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
     background-color: #f2f2f2;
+    padding-top: 4.5rem;
 }
 
 .page-heading {
@@ -204,6 +202,8 @@
             .post-meta,
             h2 {
                 padding: 10px;
+                font-size: 1.5rem;
+                font-weight: normal;
             }
 
             > div {

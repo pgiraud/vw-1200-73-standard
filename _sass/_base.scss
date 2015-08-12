@@ -41,6 +41,14 @@ p {
 }
 
 
+a,
+a:hover {
+    color: $text-color;
+    text-decoration: none;
+
+}
+
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -105,16 +113,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $text-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: darken($text-color, 15%);
     }
 }
 
