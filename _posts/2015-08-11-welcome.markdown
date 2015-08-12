@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2015-08-12 19:44:19
+date:   2015-08-11 19:44:19
 categories: jekyll update
 image:
   feature: https://farm6.staticflickr.com/5598/15723263731_29b77f0ebb

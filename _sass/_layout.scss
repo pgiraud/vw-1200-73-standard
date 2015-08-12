@@ -163,6 +163,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: #f2f2f2;
 }
 
 .page-heading {
@@ -173,8 +174,72 @@
     margin-left: 0;
     list-style: none;
 
+    -webkit-box-align: stretch;
+    -webkit-font-smoothing: antialiased;
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+
     > li {
         margin-bottom: $spacing-unit;
+
+        &:nth-child(1) {
+            width: 100%;
+        }
+        padding: 0 10px;
+        width: 50%;
+        @include media-query($on-laptop) {
+            width: 100%;
+        }
+
+        > a {
+            display: block;
+            width: 100%;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+
+            &:hover {
+                box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.2);
+                transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .post-meta,
+            h2 {
+                padding: 10px;
+            }
+
+            > div {
+                padding-top: 50%;
+                background-size: cover;
+                background-position: center;
+                &.desaturate {
+                    @include desaturate();
+
+                    -webkit-transition-property: all, left, top, width;
+                    -webkit-transition-duration: .5s, .1s, .1s, .1s;
+                    -webkit-transition-timing-function: cubic-bezier(.33,0,.2,1);
+                    -webkit-transition-delay: 0;
+                    -moz-transition-property: all, left, top, width;
+                    -moz-transition-duration: .5s, .1s, .1s, .1s;
+                    -moz-transition-timing-function: cubic-bezier(.33,0,.2,1);
+                    -moz-transition-delay: 0;
+                    -ms-transition-property: all, left, top, width;
+                    -ms-transition-duration: .5s, .1s, .1s, .1s;
+                    -ms-transition-timing-function: cubic-bezier(.33,0,.2,1);
+                    -ms-transition-delay: 0;
+                    -o-transition-property: all, left, top, width;
+                    -o-transition-duration: .5s, .1s, .1s, .1s;
+                    -o-transition-timing-function: cubic-bezier(.33,0,.2,1);
+                    -o-transition-delay: 0;
+                    transition-property: all, left, top, width;
+                    transition-duration: .5s, .1s, .1s, .1s;
+                    transition-timing-function: cubic-bezier(.33,0,.2,1);
+                }
+            }
+        }
+
+        &:hover .desaturate {
+            filter: none;
+            -webkit-filter: none;
+        }
     }
 }
 
