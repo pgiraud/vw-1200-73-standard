@@ -1,0 +1,20 @@
+<section class="prev-next">
+  {% if page.previous.url %}
+  <div class="prev">
+    <a href="{{ site.baseurl }}{{ page.previous.url }}">
+      <h2>
+      {{ page.previous.title }}
+      </h2>
+    </a>
+  </div>
+  {% endif %}
+  {% if page.next.url %}
+  <div class="next">
+    <a href="{{ site.baseurl }}{{ page.next.url }}">
+      <h2>
+      {{ page.next.title }}
+      </h2>
+    </a>
+  </div>
+  {% endif %}
+</section>

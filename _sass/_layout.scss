@@ -115,6 +115,8 @@ header.post {
 /**
  * Site footer
  */
+.prev-next,
+.disqus,
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
@@ -238,8 +240,6 @@ header.post {
             h2 {
                 padding: 10px;
                 font-weight: normal;
-            }
-            h2 {
                 font-size: 1.3rem;
                 margin-bottom: 0;
             }
@@ -281,6 +281,79 @@ header.post {
     }
 }
 
+.prev-next {
+    @extend %clearfix;
+    > div {
+        width: 50%;
+        > a {
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            position: relative;
+
+            &::before, &::after {
+              /* arrow icon in CSS - for element with nested unordered lists */
+              content: '';
+              position: absolute;
+              top: 50%;
+              margin-top: -1px;
+              display: inline-block;
+              height: 2px;
+              width: 10px;
+              background: grey;
+              @include transition(left .3s, color .3s, right .3s);
+            }
+
+            &::before {
+              @include transform(rotate(45deg));
+            }
+            &::after {
+              @include transform(rotate(-45deg));
+            }
+        }
+    }
+    .next {
+        float: right;
+        text-align: right;
+        > a {
+            padding-right: 40px;
+            &::before, &::after {
+                /* arrow goes on the right side - children navigation */
+                right: 20px;
+                @include transform-origin(9px 50%);
+            }
+            &:hover {
+                &::before, &::after {
+                    right: 10px;
+                }
+            }
+        }
+    }
+    .prev {
+        float: left;
+        > a {
+            padding-left: 40px;
+
+            &::before, &::after {
+                /* arrow goes on the right side - children navigation */
+                left: 20px;
+                @include transform-origin(1px 50%);
+            }
+            &:hover {
+                opacity: .5;
+                &::before, &::after {
+                    left: 10px;
+                }
+            }
+        }
+    }
+    h2 {
+        padding: 10px;
+        font-weight: normal;
+        font-size: 1.3rem;
+        margin-bottom: 0;
+    }
+}
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
@@ -328,4 +401,8 @@ header.post {
             font-size: 20px;
         }
     }
+}
+
+.disqus {
+    background-color: #f2f2f2;
 }

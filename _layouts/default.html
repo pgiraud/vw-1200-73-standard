@@ -9,7 +9,6 @@
     class="post"
     {% endif %}
   >
-    {{ is_post }}
 
     {% if page.url == '/index.html' %}
         {% include header_index.html %}
@@ -22,6 +21,14 @@
         {{ content }}
       </div>
     </div>
+
+    {% if page.url != '/index.html' %}
+        {% include prev_next.html %}
+    {% endif %}
+
+    {% if page.url != '/index.html' %}
+        {% include disqus.html %}
+    {% endif %}
 
     {% include footer.html %}
 
