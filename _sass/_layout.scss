@@ -46,6 +46,9 @@
 }
 header.post {
   height: 350px;
+  @include media-query($on-laptop) {
+    height: 200px;
+  }
   position: relative;
 
   .picture,
