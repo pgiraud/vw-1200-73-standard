@@ -5,7 +5,11 @@
 
   <body>
 
-    {% include header.html %}
+    {% if page.url == '/index.html' %}
+        {% include header_index.html %}
+    {% else %}
+        {% include header_post.html %}
+    {% endif %}
 
     <div class="page-content">
       <div class="wrapper">
