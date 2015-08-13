@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Le blog est prêt"
-date:   2015-08-13 17:00:00
+date:   2015-08-03 17:00:00
 ---
 
 Il me fallait un blog, pour pouvoir raconter toutes mes histoires.
