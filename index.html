@@ -14,6 +14,8 @@ layout: default
         <a href="{{ site.baseurl }}{{ post.url }}">
             {% if post.image.feature %}
               <div class="desaturate" style="background-image:url('{{ post.image.feature }}_c.jpg')"></div>
+            {% else %}
+              <div class="desaturate" style="background-image:url('https://farm6.staticflickr.com/5748/19919399544_af969e05c0_c.jpg')"></div>
             {% endif %}
             <h2>
               {{ post.title }}
