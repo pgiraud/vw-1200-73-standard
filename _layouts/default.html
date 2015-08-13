@@ -3,7 +3,13 @@
 
   {% include head.html %}
 
-  <body>
+
+  <body
+    {% if page.url != '/index.html' %}
+    class="post"
+    {% endif %}
+  >
+    {{ is_post }}
 
     {% if page.url == '/index.html' %}
         {% include header_index.html %}

@@ -42,6 +42,47 @@
             font-size: 1rem;
         }
     }
+
+}
+header.post {
+  height: 350px;
+  position: relative;
+
+  .picture,
+  .gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .picture {
+    background-size: cover;
+    background-position: center;
+  }
+  .gradient {
+    background: rgba(51, 51, 51, 0.6);
+  }
+
+  .wrapper {
+    position: relative;
+    height: 100%;
+    display: table;
+    padding: 0;
+
+    & > div {
+      display: table-cell;
+      vertical-align: middle;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+
+  .post-meta {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+  }
+
 }
 
 

@@ -1,10 +1,31 @@
-<header class="site-header">
+<header class="post">
+  {% if page.image.feature %}
+    <div class="picture" style="background-image:url('{{ page.image.feature }}_c.jpg')"></div>
+  {% endif %}
+  <div class="gradient"></div>
 
   <div class="wrapper">
-    <div>
-      <a href="{{ site.baseurl }}/">
-          Home
-      </a>
+    <div class="">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <span class="post-meta">
+      {% assign m = page.date | date: "%-m" %}
+      {{ page.date | date: "%-d" }}
+      {% case m %}
+          {% when '1' %}janvier
+          {% when '2' %}février
+          {% when '3' %}mars
+          {% when '4' %}avril
+          {% when '5' %}mai
+          {% when '6' %}juin
+          {% when '7' %}juillet
+          {% when '8' %}août
+          {% when '9' %}septembre
+          {% when '10' %}octobre
+          {% when '11' %}novembre
+          {% when '12' %}décembre
+      {% endcase %}
+      {{ page.date | date: "%Y" }}
+      </span>
     </div>
   </div>
 
