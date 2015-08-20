@@ -8,7 +8,9 @@ $(function() {
     }
     $(this).wrap($('<a>', {
       href: $(this).attr('src').replace(/_[a-z]\.jpg/, '_b.jpg'),
-      'class': 'image'
-    }).attr('data-lightbox', set));
+      'class': 'image',
+      'data-lightbox': set,
+      'data-title': $(this).attr('alt')
+    }));
   });
 });
