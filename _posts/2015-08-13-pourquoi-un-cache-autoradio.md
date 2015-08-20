@@ -21,6 +21,6 @@ Sébastien, tu m'expliqueras ça en détails, hein ?
 
 Sur la photo ci-dessous, on peut voir que le cache actuel est troué. Alors tant qu'à faire autant partir d'un cache autoradio sans trous.
 
-![](https://farm1.staticflickr.com/706/20362328269_888f5f19c1_c.jpg)
+![](https://farm1.staticflickr.com/706/20362328269_888f5f19c1_z.jpg)
 
 Si vous regardez bien, la porte du vide poche est elle conforme à l'origine.

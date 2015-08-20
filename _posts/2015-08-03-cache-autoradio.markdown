@@ -9,7 +9,7 @@ Alors voilà comment tout ça a commencé.
 
 Un beau jour de Août 2015, le 03 plus exactement, je reçois (enfin) un paquet dans la boîte aux lettres.
 
-![](https://farm1.staticflickr.com/493/20076036959_391568b70c_c.jpg)
+![](https://farm1.staticflickr.com/493/20076036959_391568b70c_z.jpg)
 
 C'est mon ami Sébastien Choisne avec qui j'avais discuté quelques jours auparavant qui m'avait donné l'info.
 
