@@ -13,5 +13,4 @@ Je le voulais simple et épuré. Et qu'il s'adapte pour être consultable sur un
 Bon je ne suis pas encore satisfait du résultat mais c'est quand même pas mal.
 
 ![](https://farm6.staticflickr.com/5681/20542583695_363a1e319a_c.jpg)
-
 ![](https://farm6.staticflickr.com/5656/20354567348_5d5be55778_c.jpg)
