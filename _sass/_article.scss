@@ -7,6 +7,11 @@
         &:hover {
             box-shadow: $grey-color 0 0 10px;
         }
+        @include media-query($on-palm) {
+            &.thumbnail {
+                width: 45%;
+            }
+        }
     }
 }
 
