@@ -2,15 +2,19 @@
     img {
         border: 1px solid $grey-color-light;
         background-color: white;
-        margin: 5px;
+        margin: 2px;
         box-shadow: $grey-color 0 0 4px;
         &:hover {
             box-shadow: $grey-color 0 0 10px;
         }
-        @include media-query($on-palm) {
+
+        @media only screen and (max-width: $screen-xs-max) {
             &.thumbnail {
-                width: 45%;
+                width: 135px;
             }
+        }
+        @media only screen and (min-width: $screen-sm-min) {
+            margin: 4px;
         }
     }
 }
