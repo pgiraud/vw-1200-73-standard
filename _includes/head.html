@@ -17,6 +17,10 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/baguetteBox.min.css">
 
   <meta property="og:type" content="website">
+  {% if page.picture %}
+  <meta property="og:image" content="{{ page.picture }}_z.jpg"/>
+  {% else %}
   <meta property="og:image" content="https://farm6.staticflickr.com/5708/20355322909_2bd31cec03_z.jpg"/>
+  {% endif %}
   <meta property="og:site_name" content="{{ site.subtitle }}">
 </head>
