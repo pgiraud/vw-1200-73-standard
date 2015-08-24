@@ -14,4 +14,6 @@ $(function() {
     }
   });
   baguetteBox.run('.post-content', {});
+
+  $('a.image').parent('p').addClass('text-center');
 });
